@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>JS if else</h2>
+
+<p>A time based greeting</p>
+
+<p id="demo"></p>
+
+<script>
+const time = new Date().getHours();
+let greeting;
+if(time<20){
+
+	greeting="good morning";
+	
+}
+else if(time<10){
+	greeting="good day";
+}
+else{
+	greeting="good evening";
+}
+
+document.getElementById("demo").innerHTML=greeting;
+
+
+
+</script>
+
+</body>
+</html>

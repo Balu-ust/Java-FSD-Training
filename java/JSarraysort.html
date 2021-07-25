@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>js array sort</h2>
+<p> the lowest number is <span id="demo"></span></p>
+
+<script>
+const points =[40,100,10,6,21,11];
+document.getElementById("demo").innerHTML=myArrayMin(points);
+
+function  myArrayMin(arr){
+	return Math.min.apply(null, arr);
+	
+}
+
+
+</script>
+
+</body>
+</html>

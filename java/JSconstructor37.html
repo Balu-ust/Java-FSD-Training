@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>JS object constructor</h2>
+
+<p id="demo"></p>
+
+<script>
+//constructor function for person objects
+
+function Person(first,last,age,eye){
+	this.firstName= first;
+	this.lastName= last;
+	this.age=age;
+	this.eyeColor=eye;
+}
+
+
+//create a person object
+
+const myFather = new Person("john","doe",50,"brown");
+
+//display age
+
+document.getElementById("demo").innerHTML="My father name is "+ myFather.firstName + ".";
+</script>
+
+
+
+</body>
+</html>

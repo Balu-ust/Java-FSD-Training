@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myfunction(txt){
+	document.getElementById("demo").innerHTML=txt;
+	
+}
+
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<p> when you click on the one of the button a function is called . the function will  display the argument ; that is passed to it </p>
+
+<form >
+
+<input type="button" onclick="myfunction('Good morning!!')" value="in the morning">
+
+<input type="button" onclick="myfunction('Good Evening!!')" value="in the evening">
+
+
+</form>
+
+<p id="demo"></p>
+
+
+
+
+
+
+</body>
+</html>

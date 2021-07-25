@@ -1,0 +1,37 @@
+@charset "ISO-8859-1";
+
+body{
+font-family: Tahoma,Arial,sans-serif;
+colour: white;
+background:black;
+margin: 8px;
+}
+
+h1{
+background:red;
+color:white;
+}
+
+h2{
+background:white;
+}
+
+p:hover,a:hover{
+background-color:yellow; 
+}
+
+.shaded{
+background:grey;
+}
+
+p{
+background:white;
+border:2px solid powderblue;
+padding:15px;
+
+}
+
+label{
+background:white;
+}
+
