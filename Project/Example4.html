@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <title>Angular JS</title>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js">
+      </script>
+   </head>
+   
+   <body>
+    
+      
+    <h2>College Student List</h2>
+    <div ng-app="myShoppingList" ng-controller="myCntrl">
+
+        
+           
+                    <ul>
+                        <li ng-repeat="x in products">
+                            {{x}}
+                        </li>
+                    </ul>
+            
+
+    </div>
+    <script>
+        var app= angular.module("myShoppingList",[]);
+        app.controller('myCntrl',function($scope) {
+            $scope.products = ["Milk","Bread",'Juice'];
+        });
+
+
+    </script>
+    
+      
+   </body>
+</html>
