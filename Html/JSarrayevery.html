@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>JS array every</h2>
+
+<p> the every() mthod checks if all array values passa test</p>
+
+<p id="demo"></p>
+
+
+<script>
+
+const numbers=[45,4,9,16,25];
+
+let allOver18= numbers.every(myFunction);
+
+document.getElementById("demo").innerHTML="all over is 18 is "+allOver18;
+
+function myFunction(value, index,array){
+
+	return value >18;
+	
+	
+}
+
+
+
+</script>
+
+
+</body>
+</html>
