@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+ <style>
+            
+            .container{overflow: hidden}
+            .tab{float: left;}
+            .tab-2{margin-left: 50px}
+            .tab-2 input{display: block;margin-bottom: 10px}
+            tr{transition:all .25s ease-in-out}
+            tr:hover{background-color:#EEE;cursor: pointer}
+            
+        </style>
+
+
+<body>
+
+
+<div >
+            <div class="tab tab-1" >
+                <table id="table" border="1">
+                    <tr>
+                        <th>S No.</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Expiry Date</th>
+                        <th>Vendor</th>
+                        <th>Delivery date</th>
+                    </tr>
+                    <tr>
+                     <td>A1</td>
+                        <td>B1</td>
+                        <td>10</td>
+                    </tr>
+                 </table>
+             </div>
+</div>
+
+
+
+
+</div>
+            <div class="tab tab-2" style="padding-top: 20px">
+                S No. :<input type="text" name="sno" id="sn">
+                Product :<input type="text" name="product" id="product">
+                Quantity :<input type="number" name="quantity" id="quantity">
+                Expiry Date :<input type="number" name="Expiry " id="Expiry ">
+                Vendor :<input type="text" name="Vendor" id="Vendor">
+                Delivery date :<input type="number" name="Delivery " id="Delivery ">
+                
+                
+                <button onclick="addHtmlTableRow();">Add</button>
+                <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+                <button onclick="removeSelectedRow();">Remove</button>
+            </div>
+        </div>
+        
+        
+ <script>
+
+     function addHtmlTableRow(){
+//get the table by id
+//create a new row and cell
+//get value from input text
+//get values into row ceells
+
+var table = document.getElementById("table"),
+newRow = table.insertRow(table.length),
+cell1=newRow.insertCell(0),
+cell2=newRow.insertCell(1),
+cell3=newRow.insertCell(2),
+cell4=newRow.insertCell(3),
+cell5=newRow.insertCell(4),
+cell6=newRow.insertCell(5),
+
+sn = document.getElementById("sn").value,
+product = document.getElementById("product").value,
+quantity= document.getElementById("quantity").value,
+Expiry= document.getElementById("Expiry").value,
+Vendor= document.getElementById("Vendor").value,
+Delivery= document.getElementById("Delivery").value;
+
+cell1.innerHTML =sn;
+cell2.innerHTML= product;
+cell2.innerHTML= quantity;
+cell2.innerHTML= Expiry;
+cell2.innerHTML= Vendor;
+cell2.innerHTML= Delivery;
+
+
+         }
+
+
+
+
+ </script>       
+        
+        
+        
+ 
+
+
+
+</body>
+</html>

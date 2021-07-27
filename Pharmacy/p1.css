@@ -1,0 +1,10 @@
+@charset "ISO-8859-1";
+Body {  
+  font-family: Calibri, Helvetica, sans-serif; 
+  background-image: url('hh.jpg'); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;;
+  
+  border-colour: #0000ff;  
+} 
